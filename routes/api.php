@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\PersonsController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PersonsController;
+use App\Http\Controllers\ResourcesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('persons', PersonsController::class);
+Route::apiResource('resources', ResourcesController::class);
