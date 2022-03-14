@@ -18,8 +18,8 @@ class Person extends Model
         'last_name',
     ];
 
-    public function resource()
+    public function resources()
     {
-      return $this->hasOne(Resource::class, 'person_id');
+      return $this->hasMany(Resource::class, 'person_id');
     }
 }

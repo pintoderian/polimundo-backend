@@ -17,8 +17,8 @@ return new class extends Migration
             $table->id();
             $table->bigInteger('person_id')->unsigned()->nullable();
             $table->foreign('person_id')->references('id')->on('persons')->onDelete('cascade');
-            $table->string('facebook_link')->nullable();
-            $table->string('twitter_link')->nullable();
+            $table->string('link')->nullable();
+            $table->string('other_link')->nullable();
             $table->timestamps();
         });
     }

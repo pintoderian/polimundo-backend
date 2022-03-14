@@ -13,7 +13,7 @@ class Resource extends Model
 
     protected $fillable = [
         'person_id',
-        'facebook_link',
-        'twitter_link',
+        'link',
+        'other_link',
     ];
 }
